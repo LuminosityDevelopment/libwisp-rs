@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: connect_and_get_server
-    - run: cargo run --example connect_and_get_server
+      run: cargo run --example connect_and_get_server

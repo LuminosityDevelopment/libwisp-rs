@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: switch_server
-    - run: cargo run --example switch_server
+      run: cargo run --example switch_server
