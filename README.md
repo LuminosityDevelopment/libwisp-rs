@@ -1,5 +1,5 @@
 # libwisp-rs
-A Rust library that exposes high-level APIs to get HTTP sites via [Wisp](https://github.com/MercuryWorkshop/wisp-protocol). (Wisp credits: MercuryWorkship)
+A Rust library that exposes high-level APIs to get HTTP sites via [Wisp](https://github.com/MercuryWorkshop/wisp-protocol). (Wisp credits: MercuryWorkshop)
 
 <sub>first real rust project, stuff may be messy, the code wasn't meant to be readable, just be easy-to-use for whatever dev wants to use this library</sub>
 
