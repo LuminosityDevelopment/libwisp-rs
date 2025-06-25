@@ -6,7 +6,7 @@ A Rust library that exposes high-level APIs to get HTTP sites via [Wisp](https:/
 # THERE IS NO HTTPS SUPPORT IN LIBWISP-RS 0.1.0 <br /> HTTPS IS PLANNED FOR LIBWISP-RS 1.0.0
 
 ## Installation
-None yet, as the crate isn't on crates.io :/
+`cargo add libwisp`
 
 ## Building & Usage
 For Usage, see `docs/` and `examples/`
@@ -16,17 +16,17 @@ For Building:
 cargo build --release
 ```
 ## FAQ
-Q: How do I use an HTTPS site with this? {target_url} is saying its HTTP over HTTPS
-A: You can't, at least, not yet with libwisp-rs 0.1.0, as it lacks HTTPS support. This is a planned feature for libwisp-rs 1.0.0
+- Q: How do I use an HTTPS site with this? {target_url} is saying its HTTP over HTTPS
+- A: You can't, at least, not yet with libwisp-rs 0.1.0, as it lacks HTTPS support. This is a planned feature for libwisp-rs 1.0.0
 
-Q: How do I do ___ ?
-A: See the documentation and examples
+- Q: How do I do ___ ?
+- A: See the documentation and examples
 
-Q: I have a bug! Where do I report it?
-A: Using the GitHub issues tab
+- Q: I have a bug! Where do I report it?
+- A: Using the GitHub issues tab
 
-Q: I have a change I'd like to make
-A: Use the GitHub pull request feature
+- Q: I have a change I'd like to make
+- A: Use the GitHub pull request feature
 
 ## Credits
 kxtzownsu - writing libwisp-rs, fact checking documentation
