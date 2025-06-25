@@ -3,7 +3,8 @@ A Rust library that exposes high-level APIs to get HTTP sites via [Wisp](https:/
 
 <sub>first real rust project, stuff may be messy, the code wasn't meant to be readable, just be easy-to-use for whatever dev wants to use this library</sub>
 
-# THERE IS NO HTTPS SUPPORT IN LIBWISP-RS 0.1.0 <br /> HTTPS IS PLANNED FOR LIBWISP-RS 1.0.0
+# THERE IS NO HTTPS URL SUPPORT IN LIBWISP-RS AT THE MOMENT <br /> HTTPS IS PLANNED FOR LIBWISP-RS 1.0.0
+<sub>wss wisp servers still work, you just have to keep it HTTP-only when running a `WispHTTPRequest()`</sub>
 
 ## Installation
 `cargo add libwisp`
