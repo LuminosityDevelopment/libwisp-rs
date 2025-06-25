@@ -5,7 +5,7 @@ edition = "2024"
 description = "a simple-to-use wisp rust library"
 license = "GPL-3.0-only"
 repository = "https://github.com/LuminosityDevelopment/libwisp-rs"
-keywords = ["websocket", "proxy", "http", "wisp", "mercuryworkshop", "mercury", "workshop", "wisp-protocol", "r58Playz", "kxtz", "kxtzownsu"]
+keywords = ["websocket", "proxy", "http", "wisp", "mercuryworkshop"]
 categories = ["network-programming", "asynchronous"]
 authors = ["kxtzownsu <kxtzownsu@gmail.com>"]
 
