@@ -29,8 +29,8 @@ cargo build --release
 - A: Use the GitHub pull request feature
 
 ## Credits
-kxtzownsu - writing libwisp-rs, fact checking documentation
-chatgpt - doing documentation (LOL)
-MercuryWorkshop - making the [Wisp protocol](https://github.com/MercuryWorkshop/wisp-protocol)
-ading2210 - hosting `wss://wisp.mercurywork.shop` which is used in examples
-??? (PLEASE CREATE GH ISSUE IF KNOWN) - hosting `wss://nebulaservices.org/wisp/` which is used in examples
+- kxtzownsu - writing libwisp-rs, fact checking documentation
+- chatgpt - doing documentation (LOL)
+- MercuryWorkshop - making the [Wisp protocol](https://github.com/MercuryWorkshop/wisp-protocol)
+- ading2210 - hosting `wss://wisp.mercurywork.shop` which is used in examples
+- ??? (PLEASE CREATE GH ISSUE IF KNOWN) - hosting `wss://nebulaservices.org/wisp/` which is used in examples
