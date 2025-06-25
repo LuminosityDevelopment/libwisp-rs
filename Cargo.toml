@@ -1,6 +1,35 @@
 [package]
-name = "libwisp-rs"
+name = "libwisp"
 version = "0.1.0"
 edition = "2024"
+description = "a simple-to-use wisp rust library"
+license = "GPLv3"
+repository = "https://github.com/LuminosityDevelopment/libwisp-rs"
+keywords = ["websocket", "proxy", "http", "wisp", "mercuryworkshop", "mercury", "workshop", "wisp-protocol", "r58Playz", "kxtz", "kxtzownsu"]
+categories = ["network-programming", "asynchronous"]
+authors = ["kxtzownsu <kxtzownsu@gmail.com>"]
 
 [dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.20", features = ["native-tls"] }
+url = "2"
+futures-util = "0.3"
+rand = "0.8"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[[example]]
+name = "connect_and_get_server"
+
+[[example]]
+name = "set_connection_type"
+
+[[example]]
+name = "http_request"
+
+[[example]]
+name = "switch_server"
+
+[[example]]
+name = "close_connection"
