@@ -34,4 +34,4 @@ cargo build --release
 - chatgpt - doing documentation (LOL)
 - MercuryWorkshop - making the [Wisp protocol](https://github.com/MercuryWorkshop/wisp-protocol)
 - ading2210 - hosting `wss://wisp.mercurywork.shop` which is used in examples
-- ??? (PLEASE CREATE GitHub ISSUE IF KNOWN) - hosting `wss://nebulaservices.org/wisp/` which is used in examples
+- scaratek - hosting `wss://nebulaservices.org/wisp/` which is used in examples
