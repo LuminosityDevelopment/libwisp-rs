@@ -10,7 +10,9 @@
 pub mod types;
 pub mod client;
 pub mod http;
+pub mod pkt;
 
-pub use types::{WispContext, ConnectionType};
+pub use pkt::{WispSendPkt, WispReadPkt};
+pub use types::{WispContext, ConnectionType, WispPktType};
 pub use client::{WispSetServer, WispGetServer, WispSetConnectionType, WispGetConnectionType, WispSwitchServer, WispClose};
-pub use http::{WispHTTPRequest, WispHTTPResponse};
+pub use http::{WispHTTPRequest, WispHTTPResponse, WispHTTPMethod};

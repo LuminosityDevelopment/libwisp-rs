@@ -23,3 +23,12 @@ impl WispContext {
         }
     }
 }
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[repr(u8)]
+pub enum WispPktType {
+    CONNECT = 0x01,
+    DATA = 0x02,
+    CONTINUE = 0x03,
+    CLOSE = 0x04,
+}

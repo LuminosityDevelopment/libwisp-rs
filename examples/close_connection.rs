@@ -6,7 +6,7 @@ async fn main() {
     let mut ctx = WispContext::new();
 
     // connect first
-    WispSetServer(&mut ctx, "wss://wisp.mercurywork.shop").await;
+    WispSetServer(&mut ctx, "wss://wispserver.dev/wisp/").await;
     println!("connected.");
 
     // close connection for good practice

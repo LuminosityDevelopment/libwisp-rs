@@ -14,19 +14,29 @@ For Usage, see `docs/` and `examples/`
 
 For Building:
 ```
+git clone https://github.com/LuminosityDevelopment/libwisp-rs
+cd libwisp-rs
 cargo build --release
 ```
+
+To run examples:
+```
+git clone https://github.com/LuminosityDevelopment/libwisp-rs
+cd libwisp-rs
+cargo run --example http_request #can be changed
+```
+
 ## FAQ
-- Q: How do I use an HTTPS site with this? {target_url} is saying its HTTP over HTTPS
+### Q: How do I use an HTTPS site with this? {target_url} is saying its HTTP over HTTPS
 - A: You can't, at least, not yet with libwisp-rs 0.1.0, as it lacks HTTPS support. This is a planned feature for libwisp-rs 1.0.0
 
-- Q: How do I do ___ ?
+### Q: How do I do ___ ?
 - A: See the documentation and examples
 
-- Q: I have a bug! Where do I report it?
+### Q: I have a bug! Where do I report it?
 - A: Using the GitHub issues tab
 
-- Q: I have a change I'd like to make
+### Q: I have a change I'd like to make
 - A: Use the GitHub pull request feature
 
 ## Credits
@@ -34,4 +44,4 @@ cargo build --release
 - chatgpt - doing documentation (LOL)
 - MercuryWorkshop - making the [Wisp protocol](https://github.com/MercuryWorkshop/wisp-protocol)
 - ading2210 - hosting `wss://wisp.mercurywork.shop` which is used in examples
-- scaratek - hosting `wss://nebulaservices.org/wisp/` which is used in examples
+- fanqyxl - hosting `wss://wispserver.dev/wisp/` which is used in examples.

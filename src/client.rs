@@ -3,6 +3,7 @@ use tokio_tungstenite::{connect_async, tungstenite::protocol::Message};
 use tokio::net::TcpStream;
 use tokio_tungstenite::WebSocketStream;
 use tokio_tungstenite::MaybeTlsStream;
+use crate::WispPktType;
 
 use crate::types::{WispContext, ConnectionType};
 
@@ -20,7 +21,7 @@ pub async fn WispSetServer(ws_ctx: &mut WispContext, wispURL: &str) {
     if let Some(msg) = ws_stream.next().await {
         match msg {
             Ok(Message::Binary(data)) => {
-                if data.len() >= 5 && data[0] == 0x03 {
+                if data.len() >= 5 && data[0] == WispPktType::CONTINUE as u8 {
                     let stream_id = u32::from_le_bytes([data[1], data[2], data[3], data[4]]);
                     if stream_id != 0 {
                         panic!("Expected CONTINUE with stream_id 0, got {}", stream_id);

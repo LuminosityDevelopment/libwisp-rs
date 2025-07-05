@@ -1,26 +1,32 @@
-# Async Function: WispHTTPRequest
+## WispHTTPRequest
 
-Sends an HTTP GET request over the Wisp connection and collects the response.
+Semds an HTTP request over an existing Wisp connection.
 
-- `ws_ctx` - mutable reference to the active [`WispContext`](./WispContext.md) (must have an open connection).
-- `http_url` - the HTTP URL to request (only HTTP, no HTTPS).
-- `headers` - optional HTTP headers as a map of key-value strings.
+### Parameters
 
-**Returns:**  
+- `ws_ctx: &mut WispContext` — Mutable reference to active WispContext with an open connection.
+- `http_url: &str` — The HTTP URL to request (note: only supports HTTP, not HTTPS).
+- `method: WispHTTPMethod` — HTTP method to use.
+- `headers: Option<HashMap<String, String>>` — Optional HTTP headers.
+- `body: Option<Vec<u8>>` — Optional HTTP request body.
+
+### Returns
 A [`WispHTTPResponse`](./WispHTTPResponse.md) struct containing the status line, headers, and body.
 
-### Details:
+### Behavior
 
-- Generates a random `stream_id` for multiplexing requests.
-- Parses the URL to extract host, port, and path.
-- Sends a Wisp CONNECT packet, followed by the HTTP GET request.
-- Reads binary response packets, aggregating the HTTP response.
-- Stops reading once the response is complete.
+- Generates a random `stream_id` for request multiplexing.
+- Parses the URL to extract host, port, path, and query.
+- Sends a Wisp `CONNECT` packet to establish the stream.
+- Sends the HTTP request line and headers, then optional body.
+- Reads binary packets from the Wisp connection, reconstructing the HTTP response.
+- Stops reading after the response is fully received or a timeout occurs.
 
 ---
 
-See also:
+## See also
 
 - [`WispContext`](./WispContext.md)
-- [`WispHTTPResponse`](./WispHTTPResponse.md)
 - [`ConnectionType`](./ConnectionType.md)
+- [`WispHTTPMethod`](#wisphhttpmethod)
+- [`WispHTTPResponse`](#wisphhttpresponse)
