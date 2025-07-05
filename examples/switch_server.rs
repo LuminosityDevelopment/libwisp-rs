@@ -7,7 +7,7 @@ async fn main() {
 
     // connect to first wisp server
     WispSetServer(&mut ctx, "wss://wispserver.dev/wisp/").await;
-    println!("connected to first server (wss://wisp.mercurywork.shop)");
+    println!("connected to first server (wss://wispserver.dev/wisp/)");
 
     // switch to a second wisp server
     WispSwitchServer(&mut ctx, "wss://wispserver.dev/adblocking/").await;
