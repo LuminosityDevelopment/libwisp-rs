@@ -43,5 +43,4 @@ cargo run --example http_request #can be changed
 - kxtzownsu - writing libwisp-rs, fact checking documentation
 - chatgpt - doing documentation (LOL)
 - MercuryWorkshop - making the [Wisp protocol](https://github.com/MercuryWorkshop/wisp-protocol)
-- ading2210 - hosting `wss://wisp.mercurywork.shop` which is used in examples
 - fanqyxl - hosting `wss://wispserver.dev/wisp/` which is used in examples.
