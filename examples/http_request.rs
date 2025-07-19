@@ -14,7 +14,7 @@ async fn main() {
 
     // this is where we add our silly headers
     let mut headers = HashMap::new();
-    headers.insert("User-Agent".to_string(), "libwisp-rs/0.2.0-beta".to_string());
+    headers.insert("User-Agent".to_string(), "libwisp-rs/0.2.0".to_string());
 
     // all http methods.. maybe??
     let methods = [
