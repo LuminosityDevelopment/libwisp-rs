@@ -7,7 +7,7 @@ use crate::types::{WispContext, ConnectionType};
 use std::fmt;
 use crate::WispPktType;
 
-// http methods :3
+// http methods 
 // example:
 // WispHTTPMethod::GET
 #[derive(Debug)]
@@ -42,7 +42,7 @@ impl fmt::Display for WispHTTPMethod {
 
 // used as a sort of way for the
 // "frontend" to do stuff based on
-// what the HTTP server responds with :3
+// what the HTTP server responds with 
 pub struct WispHTTPResponse {
     pub status: String,
     pub headers: String,
@@ -69,7 +69,7 @@ impl WispHTTPResponse {
 // ---------------------------------
 // @param ws_ctx     - current WispContext
 // @param http_url   - HTTP url to connect to (NO HTTPS)
-// @param headers    - http headers :3
+// @param headers    - http headers 
 pub async fn WispHTTPRequest(
     ws_ctx: &mut WispContext,
     http_url: &str,
