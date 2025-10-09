@@ -10,7 +10,7 @@ async fn main() {
     let mut ctx = WispContext::new();
 
     // connect to sigma wispserver.dev
-    WispSetServer(&mut ctx, "wss://wispserver.dev/wisp/").await;
+    WispSetServer(&mut ctx, "wss://wisp.mercurywork.shop/").await;
 
     // this is where we add our silly headers
     let mut headers = HashMap::new();

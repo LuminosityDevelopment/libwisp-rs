@@ -7,7 +7,7 @@ use libwisp::{
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut ctx = WispContext::new();
 
-    WispSetServer(&mut ctx, "wss://wispserver.dev/wisp/").await;
+    WispSetServer(&mut ctx, "wss://wisp.mercurywork.shop/").await;
     WispSetConnectionType(&mut ctx, ConnectionType::Tcp);
 
     let stream_id: u32 = rand::random();
